@@ -62,6 +62,7 @@ class VetControllerTests {
 		radiology.setName("radiology");
 		helen.addSpecialty(radiology);
 		given(this.vets.findAll()).willReturn(Lists.newArrayList(james, helen));
+		when(this.vets.findAll()).thenReturn(Lists.newArrayList(james, helen));
 	}
 
 	@Test
